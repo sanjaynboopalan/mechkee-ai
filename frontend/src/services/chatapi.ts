@@ -1,8 +1,11 @@
 import axios from 'axios';
 
+// Demo mode for GitHub Pages - simulate API responses
+const DEMO_MODE = process.env.NODE_ENV === 'production';
+
 // Create axios instance with base configuration
 const api = axios.create({
-  baseURL: 'http://localhost:8001/api/v1',
+  baseURL: DEMO_MODE ? '' : 'http://localhost:8001/api/v1',
   timeout: 30000,
   headers: {
     'Content-Type': 'application/json',
@@ -87,6 +90,34 @@ export const chatAPI = {
   // Send a chat message and get AI response
   async sendMessage(request: ChatRequest): Promise<ChatResponse> {
     try {
+      // Demo mode for GitHub Pages
+      if (DEMO_MODE) {
+        // Simulate API delay
+        await new Promise(resolve => setTimeout(resolve, 1000 + Math.random() * 2000));
+        
+        // Generate demo response
+        const demoResponses = [
+          "Hello! I'm MechKee.ai, your intelligent assistant. I'm currently running in demo mode since this is hosted on GitHub Pages. In a full deployment, I would be connected to a backend server with AI capabilities, web search, and document processing features.",
+          "I'm designed to help with various tasks including answering questions, searching the web for information, and processing documents. This mobile-responsive interface works great on all devices!",
+          "While in demo mode, I can show you the interface and user experience. For full functionality, you would need to deploy the backend server with your API keys configured.",
+          "Thanks for trying MechKee.ai! This demo showcases the responsive design and chat interface. The full version includes real-time search, document analysis, and advanced AI reasoning capabilities."
+        ];
+        
+        const randomResponse = demoResponses[Math.floor(Math.random() * demoResponses.length)];
+        
+        return {
+          response: randomResponse,
+          session_id: request.session_id || 'demo-session',
+          conversation_length: 1,
+          processing_time: 1500,
+          word_count: randomResponse.length,
+          sources: [],
+          key_points: ['Demo Mode Active', 'GitHub Pages Deployment', 'Mobile Responsive Design'],
+          confidence_score: 1.0,
+          search_metadata: { demo_mode: true }
+        };
+      }
+      
       // Use basic chat endpoint for now since enhanced endpoint has configuration issues
       const basicRequest = {
         message: request.message,
