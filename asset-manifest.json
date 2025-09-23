@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/mechkee-ai/static/css/main.d0e1ad70.css",
-    "main.js": "/mechkee-ai/static/js/main.7ee37975.js",
+    "main.css": "/mechkee-ai/static/css/main.33ede9bb.css",
+    "main.js": "/mechkee-ai/static/js/main.0e35f035.js",
     "index.html": "/mechkee-ai/index.html",
-    "main.d0e1ad70.css.map": "/mechkee-ai/static/css/main.d0e1ad70.css.map",
-    "main.7ee37975.js.map": "/mechkee-ai/static/js/main.7ee37975.js.map"
+    "main.33ede9bb.css.map": "/mechkee-ai/static/css/main.33ede9bb.css.map",
+    "main.0e35f035.js.map": "/mechkee-ai/static/js/main.0e35f035.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0e1ad70.css",
-    "static/js/main.7ee37975.js"
+    "static/css/main.33ede9bb.css",
+    "static/js/main.0e35f035.js"
   ]
 }
