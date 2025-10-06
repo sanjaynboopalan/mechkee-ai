@@ -1,4 +1,4 @@
-# MechKee.ai - Intelligent AI Assistant
+# workwithai - Intelligent AI Assistant
 
 An advanced AI-powered assistant platform that combines intelligent search capabilities with modern conversational AI, featuring a responsive design that works seamlessly across all devices.
 
@@ -44,8 +44,7 @@ An advanced AI-powered assistant platform that combines intelligent search capab
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/yourusername/bluemech.git
-cd bluemech
+
 ```
 
 ### 2. Frontend Setup
@@ -192,11 +191,7 @@ npm run build
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
 
-- 📧 Email: support@mechkee.ai
-- 💬 GitHub Issues: [Report Bug](https://github.com/yourusername/bluemech/issues)
-- 📖 Documentation: [Wiki](https://github.com/yourusername/bluemech/wiki)
 
 ## 🌟 Acknowledgments
 
@@ -207,9 +202,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**MechKee.ai** - Where Intelligence Meets Simplicity 🤖✨
+**workwith.ai** - Where Intelligence Meets Simplicity 🤖✨
 
-![Mobile Responsive](https://img.shields.io/badge/Mobile-Responsive-green)
-![React](https://img.shields.io/badge/React-18-blue)
-![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Ready-success)
